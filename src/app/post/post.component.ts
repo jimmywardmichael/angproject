@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
-  postImg = ''
+ @Input() postImg = ''
 }
