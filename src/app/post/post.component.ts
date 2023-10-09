@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
- @Input() postImg = ''
+ @Input('img') postImg = ''
+ imgSelected = new EventEmitter<string>()
 }
