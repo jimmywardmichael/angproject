@@ -1,12 +1,15 @@
 import { Component, Input, EventEmitter, Output, OnInit,
-   OnChanges, DoCheck, AfterViewInit, AfterViewChecked, AfterContentChecked, AfterContentInit } from '@angular/core';
+   OnChanges, DoCheck, AfterViewInit, AfterViewChecked, 
+   AfterContentChecked, AfterContentInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss']
 })
-export class PostComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked{
+export class PostComponent implements OnInit, OnChanges, DoCheck, 
+AfterContentInit, AfterContentChecked, AfterViewInit, 
+AfterViewChecked, OnDestroy{
  @Input('img') postImg = ''
  @Output() imgSelected = new EventEmitter<string>()
   
@@ -35,6 +38,10 @@ ngOnInit(){
  }
  ngAfterContentChecked(){
   console.log('AfterContentChecked() called');
+ }
+ ngOnDestroy(){
+     console.log('OnDestroy() called');
+     
  }
 }
   
