@@ -1,4 +1,5 @@
-import { Component, Input, EventEmitter, Output, OnInit, OnChanges, DoCheck, SimpleChanges, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Component, Input, EventEmitter, Output, OnInit,
+   OnChanges, DoCheck, AfterViewInit, AfterViewChecked, AfterContentChecked, AfterContentInit } from '@angular/core';
 
 @Component({
   selector: 'app-post',
