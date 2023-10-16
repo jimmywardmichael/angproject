@@ -11,4 +11,10 @@
 <p>Hello {{ name | titlecase }}!</p>
 <p>Hello {{ getName() }}!</p>
 <p>{{ 15 + 13 }}</p>
+<p>{{ currentDate | date: 'MMMM d' }}</p>
+<p> {{ cost | currency }}</p>
+<p> {{ tempature | number: '2.0-0' }}</p>
+<pre> {{ pizza | json }}</pre>
+
+
 <router-outlet></router-outlet>
