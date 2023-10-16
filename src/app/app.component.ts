@@ -18,7 +18,7 @@ pizza = {
 
 
 blueClass = false;
-
+fontSize = 41
 
 getName() { 
   return this.name
